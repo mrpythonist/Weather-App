@@ -1,0 +1,76 @@
+* {
+ margin: 0;
+ padding: 0;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 50px;
+    background-color:aliceblue;
+}
+
+.city {
+    height: 25px;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color:darkgray;
+    color: white;
+}
+
+.city-name, .city-time, .city-temp, .city-condition {
+    margin: 10px;
+    font-size: 15px;
+}
+
+.city-name {
+    font-weight: bold;
+}
+
+.send-btn {
+    height: 38px;
+    margin-left: 5px;
+    width: 50px;
+    border-radius: 5px;
+    border: 0px;
+    background-color:darkolivegreen;
+    color: white;
+    cursor: pointer;
+}
+
+.input-container {
+    display: flex;
+}
+
+.temp-container {
+    display: flex;
+}
+
+#loader{
+    width: 2em;
+    height: 2em;
+    margin: 5px;
+    margin-left: 40%;
+    margin-top: 20%;
+    border-radius: 50%;
+    border: 0.75em solid darkolivegreen;
+    border-top-color: gray; /* overrides top color to stand out */
+
+    animation: 2s infinite loader;
+}
+
+@keyframes loader{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(360deg)}
+}
